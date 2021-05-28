@@ -1,8 +1,6 @@
-# FedAdapt
+# FedAdapt: Adaptive Offloading for IoT Devices in Federated Learning
 
-### FedAdapt: Adaptive Offloading for IoT Devices in Federated Learning
-
-#### About the research
+### About the research
 
 FedAdapt is a holistic framework for an IoT-edge environment that surmounts the challenges of accelerating federated learning on resource constrained devices, reducing the impact of stragglers arising from computational heterogeneity of IoT devices and adapting to varying network bandwidth between devices and an edge server. 
 
@@ -20,7 +18,7 @@ To accelerate the training process of federated learning, FedAdapt is underpinne
 
 More information on the states, observations, rewards, actions, offloading strategy, and the FedAdapt modules are presented in the research article entitled, "FedAdapt: Adaptive Offloading for IoT Devices in Federated Learning".
 
-#### Code Structure
+### Code Structure
 
 The repository contains the source code of FedAdapt. The code is organised as: 
 1. Federated learning training code using FedAdapt in `FL_training` folder.
@@ -32,7 +30,7 @@ All configuration options are given in `config.py` , which contains the architec
 
 Currently, CIFAR10 dataset and Convolutional Neural Network (CNN) models are supported. The code can be extended to support other datasets and models.
 
-#### Setting up the environment
+### Setting up the environment
 
 The code is tested on Python 3 with Pytorch version 1.4 and torchvision 0.5. In order to test the code, install Pytorch and torchvision on each IoT device (Raspberry Pi and Jetson). The simplest way is to install from pre-built PyTorch and torchvision pip wheel. Please download respective pip wheel as follows:
 - Pyotrch: https://github.com/FedML-AI/FedML-IoT/tree/master/pytorch-pkg-on-rpi
@@ -61,7 +59,6 @@ To test the code:
 - Run FL training using FedAdapt: please follow instructions in `FL_training` folder.
 - Run RL training for FedAdapt agent: please follow instructions in `RL_training` folder.
 
-#### Citation
+### Citation
 
 Please cite the paper as follows: Di Wu, Rehmat Ullah, Paul Harvey, Peter Kilpatrick, Ivor Spence and Blesson Varghese, "FedAdapt: Adaptive Offloading for IoT Devices in Federated Learning," 2021. 
-
