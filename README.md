@@ -1,28 +1,34 @@
 # FedAdapt
 
-### FedAdapt: Adaptive Offloading of FederatedLearning on IoT Devices
+### FedAdapt: Adaptive Offloading for IoT Devices in Federated Learning
 
-This repository includes source code for the paper "FedAdapt: Adaptive Offloading of FederatedLearning on IoT Devices".
+#### About the research
+
+FedAdapt is a holistic framework for an IoT-edge environment that surmounts the challenges of accelerating federated learning on resource constrained devices, reducing the impact of stragglers arising from computational heterogeneity of IoT devices and adapting to varying network bandwidth between devices and an edge server. 
+
+
+
+To accelerate the training process of federated learning, FedAdapt is underpinned by an offloading technique in which the layers of a Deep Neural Network (DNN) model can be offloaded from the device to an edge server to alleviate the computational burden of training on the device. To reduce the impact of stragglers, FedAdapt incorporates a reinforcement learning approach to automatically identify the layers that need to be offloaded from the device to the edge. FedAdapt further optimizes the reinforcement learning approach to develop different offloading strategies for each device while accounting for changing network bandwidth. A clustering technique is implemented to rapidly generate the offloading strategy.
 
 #### Code Structure
 
-The code is composed of two parts: 
-1. FL training code using FedAdapt in `FL_training` folder.
-2. RL training code for FedAdapt agent in `RL_training` folder.
+The repository contains the source code of FedAdapt. The code is organised as: 
+1. Federated learning training code using FedAdapt in `FL_training` folder.
+2. Reinforcement learning training code for FedAdapt agent in `RL_training` folder.
 
 The results are saved as pickle files in the `results` folder. 
 
 All configuration options are given in `config.py` , which contains the architecture, model, FL training hyperparameters and RL training hyperparameters.
 
-Currently, the supported datasets is CIFAR10, and the supported model is CNN. The code can be extended to support other datasets and models too.
+Currently, CIFAR10 dataset and Convolutional Neural Network (CNN) models are supported. The code can be extended to support other datasets and models.
 
 #### Setting up the environment
 
-The code is tested on Python 3 with Pytorch version 1.4 and torchvision 0.5. In order to test the code, you need to install Pytorch and torchvision on each IoT device (Raspberry Pi and Jetson). The simplest way is to install from pre-built PyTorch and torchvision pip wheel. Please download respective pip wheel as follow:
+The code is tested on Python 3 with Pytorch version 1.4 and torchvision 0.5. In order to test the code, install Pytorch and torchvision on each IoT device (Raspberry Pi and Jetson). The simplest way is to install from pre-built PyTorch and torchvision pip wheel. Please download respective pip wheel as follows:
 - Pyotrch: https://github.com/FedML-AI/FedML-IoT/tree/master/pytorch-pkg-on-rpi
 - Jetson: https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-8-0-now-available/72048
 
-Then, modify respective hostname and ip address in `config.py`. CLIENTS_CONFIG and CLIENTS_LIST in `config.py` are used for indexing and sorting.
+Then, modify the respective hostname and ip address in `config.py`. CLIENTS_CONFIG and CLIENTS_LIST in `config.py` are used for indexing and sorting.
 
 ```
 # Network configration
@@ -47,5 +53,5 @@ To test the code:
 
 #### Citation
 
-When using this code for scientific publications, please kindly cite the above paper.
+Please cite the paper as follows: Di Wu, Rehmat Ullah, Paul Harvey, Peter Kilpatrick, Ivor Spence and Blesson Varghese, "FedAdapt: Adaptive Offloading for IoT Devices in Federated Learning," 2021. 
 
