@@ -8,6 +8,8 @@ FedAdapt is a holistic framework for an IoT-edge environment that surmounts the 
 
 
 
+
+
 To accelerate the training process of federated learning, FedAdapt is underpinned by an offloading technique in which the layers of a Deep Neural Network (DNN) model can be offloaded from the device to an edge server to alleviate the computational burden of training on the device. To reduce the impact of stragglers, FedAdapt incorporates a reinforcement learning approach to automatically identify the layers that need to be offloaded from the device to the edge. FedAdapt further optimizes the reinforcement learning approach to develop different offloading strategies for each device while accounting for changing network bandwidth. A clustering technique is implemented to rapidly generate the offloading strategy.
 
 #### Code Structure
@@ -55,3 +57,4 @@ To test the code:
 
 Please cite the paper as follows: Di Wu, Rehmat Ullah, Paul Harvey, Peter Kilpatrick, Ivor Spence and Blesson Varghese, "FedAdapt: Adaptive Offloading for IoT Devices in Federated Learning," 2021. 
 
+FedAdapt was developed at the "[Edge Computing Hub](https://edgehub.eeecs.qub.ac.uk)" located at "[Queen's University Belfast](https://www.qub.ac.uk)", UK. 
