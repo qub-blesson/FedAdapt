@@ -57,4 +57,4 @@ To test the code:
 
 Please cite the paper as follows: Di Wu, Rehmat Ullah, Paul Harvey, Peter Kilpatrick, Ivor Spence and Blesson Varghese, "FedAdapt: Adaptive Offloading for IoT Devices in Federated Learning," 2021. 
 
-FedAdapt was developed at the "[Edge Computing Hub](https://edgehub.eeecs.qub.ac.uk)" located at "[Queen's University Belfast](https://www.qub.ac.uk)", UK. 
+FedAdapt was developed at the [Edge Computing Hub](https://edgehub.eeecs.qub.ac.uk) located at [Queen's University Belfast](https://www.qub.ac.uk), UK. 
