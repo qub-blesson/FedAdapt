@@ -4,7 +4,7 @@
 
 FedAdapt is a holistic framework for an IoT-edge environment that surmounts the challenges of accelerating federated learning on resource constrained devices, reducing the impact of stragglers arising from computational heterogeneity of IoT devices and adapting to varying network bandwidth between devices and an edge server. 
 
-FedAdapt was developed at the [Edge Computing Hub](https://edgehub.eeecs.qub.ac.uk) located at [Queen's University Belfast](https://www.qub.ac.uk), UK. 
+FedAdapt was developed at the [Edge Computing Hub](https://edgehub.co.uk). 
 
 <p align="center">
   <img src="images/FedAdaptFramework.png" alt="FedAdapt framework" width="400"/>
