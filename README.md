@@ -61,14 +61,7 @@ To test the code:
 
 ### Citation
 
-Please cite the paper as follows: Di Wu, Rehmat Ullah, Paul Harvey, Peter Kilpatrick, Ivor Spence and Blesson Varghese, "FedAdapt: Adaptive Offloading for IoT Devices in Federated Learning," 2021. 
+Please cite the paper as follows: Di Wu, Rehmat Ullah, Paul Harvey, Peter Kilpatrick, Ivor Spence and Blesson Varghese, "FedAdapt: Adaptive Offloading for IoT Devices in Federated Learning," in IEEE Internet of Things Journal, vol. 9, no. 21, pp. 20889-20901, 1 Nov.1, 2022, doi: 10.1109/JIOT.2022.3176469.
 ```
-@misc{wu2021fedadapt,
-      title={FedAdapt: Adaptive Offloading for IoT Devices in Federated Learning}, 
-      author={Di Wu and Rehmat Ullah and Paul Harvey and Peter Kilpatrick and Ivor Spence and Blesson Varghese},
-      year={2021},
-      eprint={2107.04271},
-      archivePrefix={arXiv},
-      primaryClass={cs.DC}
-}
+@ARTICLE{9778210,  author={Wu, Di and Ullah, Rehmat and Harvey, Paul and Kilpatrick, Peter and Spence, Ivor and Varghese, Blesson},  journal={IEEE Internet of Things Journal},   title={FedAdapt: Adaptive Offloading for IoT Devices in Federated Learning},   year={2022},  volume={9},  number={21},  pages={20889-20901},  doi={10.1109/JIOT.2022.3176469}}
 ```
